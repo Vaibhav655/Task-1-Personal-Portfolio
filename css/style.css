@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+#projects .project {
+    margin: 2rem 0;
+}
+
+#projects img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #1b4965;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

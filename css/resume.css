@@ -1,0 +1,29 @@
+
+.resumebutton {
+  --color-primary: #bee9e8;
+  --color-secondary: #4836bb;
+  --color-shadow: #654dff63;
+
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: block; 
+  margin: 0 auto; /* Center horizontally */
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: inherit;
+  background: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 0 var(--color-shadow);
+  transform: skew(-10deg);
+  transition: all 0.1s ease;
+  filter: drop-shadow(0 15px 20px var(--color-shadow));
+}
+
+.resumebutton:active {
+  letter-spacing: 0;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--color-shadow);
+}

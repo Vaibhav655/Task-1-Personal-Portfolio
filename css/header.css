@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cae9ff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b4965
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: transparent;
+}
+
+.button {
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    height: 1.5rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(65, 122, 208) 10.8%,
+      rgb(88, 223, 238) 94.3%
+    );
+    transition: all 0.475s;
+}
+
+.button:active::before {
+    background-color: #4b0082; 
+}
+
+section {
+    padding: 100px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+    color: #4b0082;
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
